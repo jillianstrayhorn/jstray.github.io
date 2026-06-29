@@ -329,3 +329,32 @@ section.block h2 { font-size: 1.6rem; margin: 0 0 16px; letter-spacing: -0.01em;
 .next:hover {
     background: white;
 }
+
+.about-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Left column (text) */
+.about-text {
+  flex: 1.1;
+}
+
+/* Right column (carousel) */
+.about-layout .carousel {
+  flex: 1;
+  max-width: 520px;
+  margin: 0;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 900px) {
+  .about-layout {
+    flex-direction: column;
+  }
+
+  .about-layout .carousel {
+    max-width: 100%;
+  }
+}
