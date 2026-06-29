@@ -269,22 +269,58 @@ section.block h2 { font-size: 1.6rem; margin: 0 0 16px; letter-spacing: -0.01em;
 
 }
 
-.photo-carousel {
-  margin-top: 28px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+.carousel {
+    position: relative;
+    max-width: 700px;
+    margin: 40px auto;
 }
 
-.carousel-track {
-  display: flex;
-  gap: 16px;
+.slide {
+    display: none;
 }
 
-.photo-carousel img {
-  width: 280px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  scroll-snap-align: start;
-  flex-shrink: 0;
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.caption {
+    margin-top: 12px;
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    border: none;
+    background: rgba(255,255,255,.85);
+    font-size: 2rem;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.prev {
+    left: -20px;
+}
+
+.next {
+    right: -20px;
+}
+
+.prev:hover,
+.next:hover {
+    background: white;
 }
