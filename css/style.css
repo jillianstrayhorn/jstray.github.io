@@ -285,8 +285,9 @@ section.block h2 { font-size: 1.6rem; margin: 0 0 16px; letter-spacing: -0.01em;
 
 .slide img {
     width: 100%;
-    height: 420px;
-    object-fit: cover;
+    max-height: 500px;
+    height: auto;
+    object-fit: contain;
     border-radius: 12px;
 }
 
