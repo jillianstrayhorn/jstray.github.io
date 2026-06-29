@@ -268,3 +268,23 @@ section.block h2 { font-size: 1.6rem; margin: 0 0 16px; letter-spacing: -0.01em;
 }
 
 }
+
+.photo-carousel {
+  margin-top: 28px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 16px;
+}
+
+.photo-carousel img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
