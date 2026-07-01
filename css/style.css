@@ -417,8 +417,3 @@ section.block h2 { font-size: 1.6rem; margin: 0 0 16px; letter-spacing: -0.01em;
 .research-areas span:last-child::after {
   content: "";
 }
-
-.hero .research-areas {
-  margin-top: 6px;
-  margin-bottom: 56px;
-}
