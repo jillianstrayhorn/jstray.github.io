@@ -1,6 +1,6 @@
-# CADIO Lab website
+# Personal Website
 
-Static website for the CADIO Lab — no build step, no dependencies. Plain HTML,
+Static website for Dr. Jillian Strayhorn — no build step, no dependencies. Plain HTML,
 CSS, and a few lines of JavaScript. Hosted with GitHub Pages.
 
 ## Structure
